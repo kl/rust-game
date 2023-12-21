@@ -1,0 +1,15 @@
+[package]
+name = "engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies.uuid]
+version = "1.4"
+features = ["v4", "fast-rng"]
+
+[dependencies.sdl2]
+git = "https://github.com/Rust-SDL2/rust-sdl2"
+rev = "76748c5"
+#version = "0.35"
+default-features = false
+features = ["ttf", "image", "gfx", "mixer"]
